@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Date and Time</h1>
+    <div style="padding:1.5rem; font-size:50px;"></div>
+
+<script>
+let display = document.querySelector("div")
+
+function clock()
+{
+    let date_time = new Date()
+    let hours = date_time.getHours()
+    let min = date_time.getMinutes()
+    let sec = date_time.getSeconds()
+display.innerHTML= `${hours}:${min}:${sec}`
+display.style.color="red"
+}
+
+setInterval(clock,1000)
+
+
+</script>
+</body>
+</html>
